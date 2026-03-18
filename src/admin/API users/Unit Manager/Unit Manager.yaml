@@ -1,0 +1,11 @@
+active: true
+apiUserPasswordPath: common.apiUserPasswords.UnitManager
+enablePasswordPath: true
+enableSwaggerDocs: null
+groupNames:
+  - Unit Manager
+guid: 01KKGKY662D5K54W8DNNG7QJYB
+name: Unit Manager
+password: null
+swaggerURLRandomPart: null
+username: Unit Manager

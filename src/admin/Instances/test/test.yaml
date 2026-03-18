@@ -1,0 +1,10 @@
+active: false
+connectionString: common.connectionString.postgresql
+guid: 01KHMYR5MR7PWZ2MNF3CPTZ9T8
+isMultiTenantStructureInstance: false
+maxPoolConnections: 10000
+name: test
+password: null
+privilege: null
+type: POSTGRE_SQL_DB
+username: null

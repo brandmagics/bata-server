@@ -1,0 +1,11 @@
+active: true
+apiUserPasswordPath: common.apiUserPasswords.ModuleAdmin
+enablePasswordPath: true
+enableSwaggerDocs: null
+groupNames:
+  - Module Admin
+guid: 01KKGKYY7HS8M2W8RWAV2HME1Y
+name: Module Admin
+password: null
+swaggerURLRandomPart: null
+username: Module Admin

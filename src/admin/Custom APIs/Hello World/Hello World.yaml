@@ -1,0 +1,21 @@
+acceptOnlyEncryptedData: false
+active: true
+errorList: []
+fileUpload:
+  allowFileUploadFields:
+    - files
+  enable: false
+  validations: {}
+guid: 01KHNAHJMQ4WH1G7N414976E58
+name: Hello World
+path: /hello-world
+resetCacheOnModificationOf: []
+runOnNativeProcess: null
+separateSandboxSettings: null
+swaggerDocs: null
+versions:
+  - isActive: true
+    name: Original
+    postHooks: []
+    preHooks: []
+    version: "-1"

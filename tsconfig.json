@@ -11,11 +11,10 @@
         "baseUrl": "./",
         "paths": {
             "*": [
-                "node_modules/*",
                 "am-types/*",
-                "src/types/*",
-                "src/Utility classes/*",
-                "src/admin/types/*"
+                "node_modules/*",
+                "src/admin/types/*",
+                "src/root/types/*"
             ]
         },
         "pretty": true,

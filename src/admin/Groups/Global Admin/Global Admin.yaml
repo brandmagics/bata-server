@@ -1,0 +1,26 @@
+active: true
+apisRegex:
+  allCollections: false
+  allCustomApis: false
+  allDatabases: false
+  allFields: false
+  allInstanceApis: false
+  allInstances: false
+  allSystemApis: false
+  allThirdPartyApis: false
+  allWebSocketEvents: false
+fields: {}
+guid: 01KKGMJV64D6D4S1A0X1BCTAHV
+name: Global Admin
+queryParams:
+  collectionNames: []
+  customApiNames: []
+  databaseNames: []
+  eventNames: []
+  fields: []
+  instanceNames: []
+  schedulerNames: []
+  supportedApiNames: []
+  systemApiNames: []
+  thirdPartyApiNames: []
+  webSocketEventNames: []

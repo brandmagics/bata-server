@@ -1,0 +1,11 @@
+active: true
+apiUserPasswordPath: common.apiUserPasswords.Employee
+enablePasswordPath: true
+enableSwaggerDocs: null
+groupNames:
+  - Employee
+guid: 01KKGM08GESHE7NK5TY1B5XRA9
+name: Employee
+password: null
+swaggerURLRandomPart: null
+username: Employee

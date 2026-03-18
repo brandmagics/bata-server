@@ -1,0 +1,11 @@
+active: true
+apiUserPasswordPath: common.apiUserPasswords.Consultant
+enablePasswordPath: true
+enableSwaggerDocs: null
+groupNames:
+  - Consultant
+guid: 01KKGKVV25YKWCZWVQG5R65BQN
+name: Consultant
+password: null
+swaggerURLRandomPart: null
+username: Consultant
