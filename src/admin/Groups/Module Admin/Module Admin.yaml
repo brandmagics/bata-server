@@ -1,0 +1,26 @@
+active: true
+apisRegex:
+  allCollections: false
+  allCustomApis: false
+  allDatabases: false
+  allFields: false
+  allInstanceApis: false
+  allInstances: false
+  allSystemApis: false
+  allThirdPartyApis: false
+  allWebSocketEvents: false
+fields: {}
+guid: 01KKGMMK18GS1823FM6X33VC8C
+name: Module Admin
+queryParams:
+  collectionNames: []
+  customApiNames: []
+  databaseNames: []
+  eventNames: []
+  fields: []
+  instanceNames: []
+  schedulerNames: []
+  supportedApiNames: []
+  systemApiNames: []
+  thirdPartyApiNames: []
+  webSocketEventNames: []

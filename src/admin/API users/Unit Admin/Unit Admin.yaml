@@ -1,0 +1,11 @@
+active: true
+apiUserPasswordPath: common.apiUserPasswords.UnitAdmin
+enablePasswordPath: true
+enableSwaggerDocs: null
+groupNames:
+  - Unit Admin
+guid: 01KKGKXF9QT941M0B7RB7HAQ0Z
+name: Unit Admin
+password: null
+swaggerURLRandomPart: null
+username: Unit Admin

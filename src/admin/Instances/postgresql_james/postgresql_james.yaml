@@ -1,0 +1,10 @@
+active: false
+connectionString: common.connectionString.postgresql_james
+guid: 01KHN9APGDWCNEEWW1VZC7TVN3
+isMultiTenantStructureInstance: false
+maxPoolConnections: 10000
+name: postgresql_james
+password: null
+privilege: null
+type: POSTGRE_SQL_DB
+username: null

@@ -1,0 +1,11 @@
+active: true
+apiUserPasswordPath: common.apiUserPasswords.EntityAdmin
+enablePasswordPath: true
+enableSwaggerDocs: null
+groupNames:
+  - Entity Admin
+guid: 01KKGKWRHEHMKTSJAQD638BP2A
+name: Entity Admin
+password: null
+swaggerURLRandomPart: null
+username: Entity Admin

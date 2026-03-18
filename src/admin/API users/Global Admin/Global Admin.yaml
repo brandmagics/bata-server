@@ -1,0 +1,11 @@
+active: true
+apiUserPasswordPath: common.apiUserPasswords.GlobalAdmin
+enablePasswordPath: true
+enableSwaggerDocs: null
+groupNames:
+  - Global Admin
+guid: 01KKGKNJZKXH9S4HF5NMNTKPCA
+name: Global Admin
+password: null
+swaggerURLRandomPart: null
+username: Global Admin
