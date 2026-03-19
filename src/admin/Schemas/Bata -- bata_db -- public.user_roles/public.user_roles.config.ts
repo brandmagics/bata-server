@@ -3,18 +3,21 @@ import * as T from 'types';
 
 let schema: ISchemaType = {
     id: <ISchemaProperty>{
-        __type: EType.string,
+        __type: EType.number,
         isPrimaryKey: true,
-        validations: <IPropertyValidation>{
-            required: true
-        }
+        isAutoIncrementByDB: true
     },
     brand_id: <ISchemaProperty>{
-        __type: EType.string,
+        __type: EType.number,
         table: "public.brands",
         column: "id"
     },
-    blueprint: EType.string,
+    blueprint: <ISchemaProperty>{
+        __type: EType.string,
+        validations: <IPropertyValidation>{
+            maxLength: 50
+        }
+    },
     hierarchy: <ISchemaProperty>{
         __type: EType.string,
         validations: <IPropertyValidation>{
@@ -28,7 +31,12 @@ let schema: ISchemaType = {
         }
     },
     is_read_only: EType.boolean,
-    scope_type: EType.string,
+    scope_type: <ISchemaProperty>{
+        __type: EType.string,
+        validations: <IPropertyValidation>{
+            maxLength: 50
+        }
+    },
     is_all_entities: EType.boolean,
     is_all_units: EType.boolean
 };

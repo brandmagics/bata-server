@@ -3,29 +3,27 @@ import * as T from 'types';
 
 let schema: ISchemaType = {
     id: <ISchemaProperty>{
-        __type: EType.string,
+        __type: EType.number,
         isPrimaryKey: true,
-        validations: <IPropertyValidation>{
-            required: true
-        }
+        isAutoIncrementByDB: true
     },
     identity_id: <ISchemaProperty>{
-        __type: EType.string,
+        __type: EType.number,
         table: "public.user_identities",
         column: "id"
     },
     brand_id: <ISchemaProperty>{
-        __type: EType.string,
+        __type: EType.number,
         table: "public.brands",
         column: "id"
     },
     entity_id: <ISchemaProperty>{
-        __type: EType.string,
+        __type: EType.number,
         table: "public.entities",
         column: "id"
     },
     unit_id: <ISchemaProperty>{
-        __type: EType.string,
+        __type: EType.number,
         table: "public.units",
         column: "id"
     }

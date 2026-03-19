@@ -3,11 +3,9 @@ import * as T from 'types';
 
 let schema: ISchemaType = {
     id: <ISchemaProperty>{
-        __type: EType.string,
+        __type: EType.number,
         isPrimaryKey: true,
-        validations: <IPropertyValidation>{
-            required: true
-        }
+        isAutoIncrementByDB: true
     },
     email: <ISchemaProperty>{
         __type: EType.string,

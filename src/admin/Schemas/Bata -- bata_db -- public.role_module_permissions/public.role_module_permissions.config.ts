@@ -3,23 +3,26 @@ import * as T from 'types';
 
 let schema: ISchemaType = {
     id: <ISchemaProperty>{
-        __type: EType.string,
+        __type: EType.number,
         isPrimaryKey: true,
-        validations: <IPropertyValidation>{
-            required: true
-        }
+        isAutoIncrementByDB: true
     },
     role_id: <ISchemaProperty>{
-        __type: EType.string,
+        __type: EType.number,
         table: "public.user_roles",
         column: "id"
     },
     module_id: <ISchemaProperty>{
-        __type: EType.string,
+        __type: EType.number,
         table: "public.modules",
         column: "id"
     },
-    access_level: EType.string
+    access_level: <ISchemaProperty>{
+        __type: EType.string,
+        validations: <IPropertyValidation>{
+            maxLength: 50
+        }
+    }
 };
 
 module.exports = { schema };

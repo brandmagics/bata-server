@@ -3,21 +3,25 @@ import * as T from 'types';
 
 let schema: ISchemaType = {
     id: <ISchemaProperty>{
-        __type: EType.string,
+        __type: EType.number,
         isPrimaryKey: true,
+        isAutoIncrementByDB: true
+    },
+    brand_id: <ISchemaProperty>{
+        __type: EType.number,
+        table: "public.brands",
+        column: "id",
         validations: <IPropertyValidation>{
             required: true
         }
     },
-    brand_id: <ISchemaProperty>{
-        __type: EType.string,
-        table: "public.brands",
-        column: "id"
-    },
     entity_id: <ISchemaProperty>{
-        __type: EType.string,
+        __type: EType.number,
         table: "public.entities",
-        column: "id"
+        column: "id",
+        validations: <IPropertyValidation>{
+            required: true
+        }
     },
     name: <ISchemaProperty>{
         __type: EType.string,
@@ -26,7 +30,12 @@ let schema: ISchemaType = {
             maxLength: 255
         }
     },
-    unit_type: EType.string
+    unit_type: <ISchemaProperty>{
+        __type: EType.string,
+        validations: <IPropertyValidation>{
+            maxLength: 50
+        }
+    }
 };
 
 module.exports = { schema };

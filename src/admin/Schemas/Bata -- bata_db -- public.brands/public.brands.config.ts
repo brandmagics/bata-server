@@ -7,30 +7,45 @@ let schema: ISchemaType = {
         isPrimaryKey: true,
         isAutoIncrementByDB: true
     },
-    company_id: <ISchemaProperty>{
-        __type: EType.number,
-        validations: <IPropertyValidation>{
-            required: true
-        }
-    },
-    name: <ISchemaProperty>{
+    bmex_id: <ISchemaProperty>{
         __type: EType.string,
         validations: <IPropertyValidation>{
-            maxLength: 200
+            maxLength: 255
         }
     },
-    color: <ISchemaProperty>{
+    brand_name: <ISchemaProperty>{
         __type: EType.string,
         validations: <IPropertyValidation>{
-            maxLength: 7
+            required: true,
+            maxLength: 255
         }
     },
-    logo_url: <ISchemaProperty>{
+    owner_type: <ISchemaProperty>{
         __type: EType.string,
         validations: <IPropertyValidation>{
-            maxLength: 500
+            maxLength: 50
         }
-    }
+    },
+    entity_type: <ISchemaProperty>{
+        __type: EType.string,
+        validations: <IPropertyValidation>{
+            maxLength: 50
+        }
+    },
+    industry: <ISchemaProperty>{
+        __type: EType.string,
+        validations: <IPropertyValidation>{
+            maxLength: 255
+        }
+    },
+    website: <ISchemaProperty>{
+        __type: EType.string,
+        validations: <IPropertyValidation>{
+            maxLength: 255
+        }
+    },
+    logo_url: EType.string,
+    created_at: EType.date
 };
 
 module.exports = { schema };

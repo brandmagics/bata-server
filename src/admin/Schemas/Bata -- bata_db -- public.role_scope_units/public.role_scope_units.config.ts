@@ -3,14 +3,14 @@ import * as T from 'types';
 
 let schema: ISchemaType = {
     role_id: <ISchemaProperty>{
-        __type: EType.string,
+        __type: EType.number,
         isPrimaryKey: true,
         validations: <IPropertyValidation>{
             required: true
         }
     },
     unit_id: <ISchemaProperty>{
-        __type: EType.string,
+        __type: EType.number,
         isPrimaryKey: true,
         validations: <IPropertyValidation>{
             required: true
