@@ -7,9 +7,9 @@ let schema: ISchemaType = {
         isPrimaryKey: true,
         isAutoIncrementByDB: true
     },
-    identity_id: <ISchemaProperty>{
+    user_id: <ISchemaProperty>{
         __type: EType.number,
-        table: "public.user_identities",
+        table: "public.users",
         column: "id"
     },
     role_id: <ISchemaProperty>{

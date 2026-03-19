@@ -1965,7 +1965,7 @@ export namespace Bata {
 export namespace bata_db {
 export interface IPublicIdentityMappings {
     id?: number;
-    identity_id?: number;
+    user_id?: number;
     brand_id?: number;
     entity_id?: number;
     unit_id?: number;
@@ -1977,7 +1977,7 @@ export namespace Bata {
 export namespace bata_db {
 export interface IPublicIdentityRoles {
     id?: number;
-    identity_id?: number;
+    user_id?: number;
     role_id?: number;
 }
 export type IPublicIdentityRoles_P = Partial<IPublicIdentityRoles>;
@@ -2046,20 +2046,6 @@ export interface IPublicUnits {
 }
 export type IPublicUnits_P = Partial<IPublicUnits>;
 export type IPublicUnits_S = { [Property in keyof IPublicUnits_P]: 1 | -1 };
-} }
-export namespace Bata {
-export namespace bata_db {
-export interface IPublicUserIdentities {
-    id?: number;
-    email: string;
-    password?: string;
-    full_name?: string;
-    designation?: string;
-    is_active?: boolean;
-    created_at?: Date;
-}
-export type IPublicUserIdentities_P = Partial<IPublicUserIdentities>;
-export type IPublicUserIdentities_S = { [Property in keyof IPublicUserIdentities_P]: 1 | -1 };
 } }
 export namespace Bata {
 export namespace bata_db {
