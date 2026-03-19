@@ -1817,6 +1817,18 @@ export type ICompany_7TaskmagicsEmployeeAppTimesheetentry_S = { [Property in key
 } }
 export namespace Bata {
 export namespace bata_db {
+export interface IPublicBrands {
+    id?: number;
+    company_id: number;
+    name?: string;
+    color?: string;
+    logo_url?: string;
+}
+export type IPublicBrands_P = Partial<IPublicBrands>;
+export type IPublicBrands_S = { [Property in keyof IPublicBrands_P]: 1 | -1 };
+} }
+export namespace Bata {
+export namespace bata_db {
 export interface IPublicCalendarCategories {
     id?: number;
     name: string;
@@ -1859,6 +1871,51 @@ export type IPublicCalendarEvents_S = { [Property in keyof IPublicCalendarEvents
 } }
 export namespace Bata {
 export namespace bata_db {
+export interface IPublicCompanies {
+    id?: number;
+    owner_id?: number;
+    name: string;
+    address?: string;
+    ctype?: string;
+    phone?: string;
+    timezone_id?: number;
+    restricted_modules?: string;
+    website_link?: string;
+    zip_code?: string;
+    country?: string;
+    created_at?: Date;
+}
+export type IPublicCompanies_P = Partial<IPublicCompanies>;
+export type IPublicCompanies_S = { [Property in keyof IPublicCompanies_P]: 1 | -1 };
+} }
+export namespace Bata {
+export namespace bata_db {
+export interface IPublicCompanyModules {
+    id: string;
+    brand_id: string;
+    module_id: string;
+    is_active?: boolean;
+    created_at?: Date;
+}
+export type IPublicCompanyModules_P = Partial<IPublicCompanyModules>;
+export type IPublicCompanyModules_S = { [Property in keyof IPublicCompanyModules_P]: 1 | -1 };
+} }
+export namespace Bata {
+export namespace bata_db {
+export interface IPublicDbConfigs {
+    id?: number;
+    company_id: number;
+    host: string;
+    port: number;
+    name: string;
+    db_user: string;
+    password: string;
+}
+export type IPublicDbConfigs_P = Partial<IPublicDbConfigs>;
+export type IPublicDbConfigs_S = { [Property in keyof IPublicDbConfigs_P]: 1 | -1 };
+} }
+export namespace Bata {
+export namespace bata_db {
 export interface IPublicEmailConfig {
     id?: number;
     configuration_name: string;
@@ -1879,6 +1936,19 @@ export type IPublicEmailConfig_S = { [Property in keyof IPublicEmailConfig_P]: 1
 } }
 export namespace Bata {
 export namespace bata_db {
+export interface IPublicEntities {
+    id: string;
+    brand_id?: string;
+    name: string;
+    reg_number?: string;
+    country?: string;
+    address?: string;
+}
+export type IPublicEntities_P = Partial<IPublicEntities>;
+export type IPublicEntities_S = { [Property in keyof IPublicEntities_P]: 1 | -1 };
+} }
+export namespace Bata {
+export namespace bata_db {
 export interface IPublicEventTypes {
     id?: number;
     name: string;
@@ -1886,6 +1956,122 @@ export interface IPublicEventTypes {
 }
 export type IPublicEventTypes_P = Partial<IPublicEventTypes>;
 export type IPublicEventTypes_S = { [Property in keyof IPublicEventTypes_P]: 1 | -1 };
+} }
+export namespace Bata {
+export namespace bata_db {
+export interface IPublicIdentityMappings {
+    id: string;
+    identity_id?: string;
+    brand_id?: string;
+    entity_id?: string;
+    unit_id?: string;
+}
+export type IPublicIdentityMappings_P = Partial<IPublicIdentityMappings>;
+export type IPublicIdentityMappings_S = { [Property in keyof IPublicIdentityMappings_P]: 1 | -1 };
+} }
+export namespace Bata {
+export namespace bata_db {
+export interface IPublicIdentityRoles {
+    id: string;
+    identity_id?: string;
+    role_id?: string;
+}
+export type IPublicIdentityRoles_P = Partial<IPublicIdentityRoles>;
+export type IPublicIdentityRoles_S = { [Property in keyof IPublicIdentityRoles_P]: 1 | -1 };
+} }
+export namespace Bata {
+export namespace bata_db {
+export interface IPublicModules {
+    id: string;
+    name: string;
+    base_url?: string;
+    slug: string;
+}
+export type IPublicModules_P = Partial<IPublicModules>;
+export type IPublicModules_S = { [Property in keyof IPublicModules_P]: 1 | -1 };
+} }
+export namespace Bata {
+export namespace bata_db {
+export interface IPublicRoleModulePermissions {
+    id: string;
+    role_id?: string;
+    module_id?: string;
+    access_level?: string;
+}
+export type IPublicRoleModulePermissions_P = Partial<IPublicRoleModulePermissions>;
+export type IPublicRoleModulePermissions_S = { [Property in keyof IPublicRoleModulePermissions_P]: 1 | -1 };
+} }
+export namespace Bata {
+export namespace bata_db {
+export interface IPublicRoleScopeEntities {
+    role_id: string;
+    entity_id: string;
+}
+export type IPublicRoleScopeEntities_P = Partial<IPublicRoleScopeEntities>;
+export type IPublicRoleScopeEntities_S = { [Property in keyof IPublicRoleScopeEntities_P]: 1 | -1 };
+} }
+export namespace Bata {
+export namespace bata_db {
+export interface IPublicRoleScopeUnits {
+    role_id: string;
+    unit_id: string;
+}
+export type IPublicRoleScopeUnits_P = Partial<IPublicRoleScopeUnits>;
+export type IPublicRoleScopeUnits_S = { [Property in keyof IPublicRoleScopeUnits_P]: 1 | -1 };
+} }
+export namespace Bata {
+export namespace bata_db {
+export interface IPublicTimeZones {
+    id?: number;
+    code: string;
+    name: string;
+    utc_offset: string;
+    is_active?: boolean;
+}
+export type IPublicTimeZones_P = Partial<IPublicTimeZones>;
+export type IPublicTimeZones_S = { [Property in keyof IPublicTimeZones_P]: 1 | -1 };
+} }
+export namespace Bata {
+export namespace bata_db {
+export interface IPublicUnits {
+    id: string;
+    brand_id?: string;
+    entity_id?: string;
+    name: string;
+    unit_type?: string;
+}
+export type IPublicUnits_P = Partial<IPublicUnits>;
+export type IPublicUnits_S = { [Property in keyof IPublicUnits_P]: 1 | -1 };
+} }
+export namespace Bata {
+export namespace bata_db {
+export interface IPublicUserIdentities {
+    id: string;
+    email: string;
+    password?: string;
+    full_name?: string;
+    designation?: string;
+    is_active?: boolean;
+    created_at?: Date;
+}
+export type IPublicUserIdentities_P = Partial<IPublicUserIdentities>;
+export type IPublicUserIdentities_S = { [Property in keyof IPublicUserIdentities_P]: 1 | -1 };
+} }
+export namespace Bata {
+export namespace bata_db {
+export interface IPublicUserRoles {
+    id: string;
+    brand_id?: string;
+    blueprint?: string;
+    hierarchy?: string;
+    instance_name?: string;
+    is_read_only?: boolean;
+    scope_type?: string;
+    is_all_entities?: boolean;
+    is_all_units?: boolean;
+}
+export type IPublicUserRoles_P = Partial<IPublicUserRoles>;
+export type IPublicUserRoles_S = { [Property in keyof IPublicUserRoles_P]: 1 | -1 };
 } }
 export namespace Bata {
 export namespace bata_db {
